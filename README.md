@@ -2,7 +2,7 @@
 
 # CheckableChipView
 
-[![Build Status](https://travis-ci.org/okdroid/checkable-chip-view.svg?branch=master)](https://travis-ci.org/okdroid/checkable-chip-view) [![Bintray](https://api.bintray.com/packages/markushi/maven/checkablechipview/images/download.svg)](https://bintray.com/markushi/maven/checkablechipview/_latestVersion)
+[![Build Status](https://travis-ci.org/okdroid/checkable-chip-view.svg?branch=master)](https://travis-ci.org/okdroid/checkable-chip-view)
 
 A checkable widget for Android. Based on the [EventFilterView from the Google I/O 2018 app](https://github.com/google/iosched/blob/2696fc7e06826ba2db72de243f0d63f83f4a29b5/mobile/src/main/java/com/google/samples/apps/iosched/ui/schedule/filters/EventFilterView.kt). 
 
@@ -11,11 +11,13 @@ Requires Android `minSdkVersion` 21.
 ![](demo.gif)
 
 ## Setup
-Make sure you have the jcenter repo in your project level `build.gradle`  
+Add JitPack in your root `build.gradle` (or `settings.gradle`):
 ```gradle
 allprojects {
     repositories {
-        jcenter()
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
     }
 }
 ```
@@ -23,7 +25,7 @@ allprojects {
 Add the dependency to your lib/app `build.gradle`  
 ```gradle
 dependencies {
-    implementation 'com.github.okdroid:checkablechipview:2.0.0'
+    implementation 'com.github.akashdh11:checkable-chip-view:2.0.0'
 }
 ```
 
